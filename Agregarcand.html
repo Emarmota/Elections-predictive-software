@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Agregar</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.slim.js"
+      integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+      crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/registroCandidatos.js"></script>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title p-b-49">
+                        Agregar candidato
+                    </span>
+
+                    <div id="sistema">
+                        <div class="wrap-input100 validate-input m-b-23" data-validate="Se necesita ingresar ID">
+                            <span class="label-input100">Id partido</span>
+                            <input id="idPartido" class="input100" type="text" name="Idpartido" placeholder="Ingresa ID partido">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar nombre">
+                            <span class="label-input100">Nombre del partido</span>
+                            <input id="nombrePartido" class="input100" type="text" name="Nombrepartido" placeholder="Ingresa nombre partido">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar ID">
+                            <span class="label-input100">ID del candidato</span>
+                            <input id="idCandidato" class="input100" type="text" name="Idcandidato" placeholder="Ingresa ID candidato">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar nombre">
+                            <span class="label-input100">Nombre del candidato</span>
+                            <input id="nombreCandidato"class="input100" type="text" name="Nombrecandidato" placeholder="Ingresa nombre candidato">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar pseudonimo">
+                            <span class="label-input100">Pseudonimo candidato</span>
+                            <input id="pseudonimo" class="input100" type="text" name="Pseudonimo" placeholder="Ingresa nombre pseudonimo">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar foto">
+                            <span class="label-input100">Fotografía candidato</span>
+                            <div style="margin-bottom: 5px;"></div>
+                            <form action="/action_page.php">
+                                <input id="foto" type="file" name="myFile"><br><br>
+                            </form>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesitan ingresar iniciales">
+                            <span class="label-input100">Iniciales del candidato</span>
+                            <input id="iniciales" class="input100" type="text" name="Inicialescandidato" placeholder="Ingresa iniciales del candidato">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar lugar de nacimiento">
+                            <span class="label-input100">Lugar de nacimiento del candidato</span>
+                            <input id="lugar" class="input100" type="text" name="LugaNaciCandi" placeholder="Ingresa lugar de nacimiento">
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Se necesita ingresar puesto">
+                            <span class="label-input100">Puesto aspirado por candidato</span>
+                            <input id="puesto" class="input100" type="text" name="PuestoCandi" placeholder="Ingresa puesto aspirado">
+                        </div>
+
+                        <div style="margin-bottom: 15px;"></div>
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button id="agregar" class="login100-form-btn">
+                                    Agregar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>
